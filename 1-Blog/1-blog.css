@@ -1,0 +1,79 @@
+body {
+    background: #111827;
+}
+
+#logo {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.63px;
+    text-decoration: none;
+}
+
+#subLogo {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-decoration: none;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+section p {
+    color: #ADB1B7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+h2,
+h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+h3 {
+    color: #ADB1B7;
+}
+
+.heroText {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.sectionText {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.sectionText>a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+footer {
+    color: #A0A3A9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
