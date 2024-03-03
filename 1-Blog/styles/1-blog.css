@@ -1,6 +1,10 @@
 body {
-    background: #111827;
-    margin: 0;
+    background: linear-gradient(#374151, #111827);
+}
+
+header {
+    margin: 0 auto;
+    padding: 69px 180px;
 }
 
 h1 {
@@ -9,19 +13,7 @@ h1 {
     font-weight: 400;
     line-height: 38px;
     margin: 0 0 30px 0;
-}
-
-h2,
-h3 {
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-}
-
-h3 {
-    color: #ADB1B7;
-    margin: 0 0 28px 0;
+    text-align: center;
 }
 
 footer {
@@ -29,6 +21,7 @@ footer {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
+    text-align: center;
 }
 
 nav a {
@@ -37,44 +30,57 @@ nav a {
     font-weight: 400;
     line-height: 19px;
     text-decoration: none;
-
 }
 
 nav ul {
     list-style: none;
-    margin: 81px 0 80px 0;
 }
 
 #girl {
     width: 50px;
+    height: 50px;
 }
 
 #imac {
-    width: 500px;
+    border-radius: 5px;
+    width: 896px;
+    height: 594px;
 }
 
-#search {
+.search ::placeholder {
+    color: #FFFFFF;
+}
+
+.search input {
     font-weight: 400;
     font-size: 16px;
-    line-height: 18.75px;
     background-color: #283241;
-    color: #FFFFFF;
     border-radius: 100px;
     height: 40px;
-    padding: 9px 49px 12px;
+    padding: 9px 11px 12px 49px;
     border: 1px solid #283241;
-    height: 40px;
+    position: absolute;
+}
+
+.search img {
+    position: relative;
+    top: 14px;
+    left: 18px;
 }
 
 #logo {
     color: #FFFFFF;
+    background-color: #4B5563;
     font-size: 18px;
     font-weight: 600;
     line-height: 22.63px;
     text-decoration: none;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
 }
 
-#subLogo {
+.link {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 400;
@@ -92,6 +98,22 @@ section p {
     height: 16px;
 }
 
+.author__name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #fff;
+}
+
+.author__position {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #ACAFB6;
+}
+
 .heroText {
     color: #FFFFFF;
     font-size: 20px;
@@ -99,7 +121,7 @@ section p {
     line-height: 32px;
     width: 708px;
     height: 256px;
-    margin: 0 0 62px 0;
+    margin: 69px 0 62px 0;
 }
 
 .sectionText {
@@ -110,6 +132,7 @@ section p {
     width: 708px;
     height: 100px;
     margin: 0 0 103px 0;
+
 }
 
 .sectionText>a {
