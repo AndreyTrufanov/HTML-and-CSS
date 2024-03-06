@@ -1,10 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(#374151, #111827);
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    margin: 0 auto;
-    padding: 69px 180px;
+    margin-bottom: 69px;
 }
 
 h1 {
@@ -12,7 +17,7 @@ h1 {
     font-size: 24px;
     font-weight: 400;
     line-height: 38px;
-    margin: 0 0 30px 0;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -22,6 +27,7 @@ footer {
     font-weight: 400;
     line-height: 28px;
     text-align: center;
+    margin-bottom: 77px;
 }
 
 nav a {
@@ -37,14 +43,15 @@ nav ul {
 }
 
 #girl {
-    width: 50px;
-    height: 50px;
+    max-width: max-content;
+    max-height: max-content;
 }
 
 #imac {
     border-radius: 5px;
     width: 896px;
     height: 594px;
+    margin-bottom: 69px;
 }
 
 .search ::placeholder {
@@ -59,11 +66,14 @@ nav ul {
     height: 40px;
     padding: 9px 11px 12px 49px;
     border: 1px solid #283241;
-    position: absolute;
+}
+
+.search {
+    position: relative;
 }
 
 .search img {
-    position: relative;
+    position: absolute;
     top: 14px;
     left: 18px;
 }
@@ -93,9 +103,12 @@ section p {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
-    margin: 0 0 14px 0;
-    width: 180px;
-    height: 16px;
+    max-width: 708px;
+    margin: 0 auto;
+}
+
+.author__description {
+    margin-bottom: 28px;
 }
 
 .author__name {
@@ -119,9 +132,11 @@ section p {
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
-    width: 708px;
-    height: 256px;
-    margin: 69px 0 62px 0;
+    margin-bottom: 62px;
+}
+
+.text {
+    margin-bottom: 103px;
 }
 
 .sectionText {
@@ -129,10 +144,6 @@ section p {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    width: 708px;
-    height: 100px;
-    margin: 0 0 103px 0;
-
 }
 
 .sectionText>a {
