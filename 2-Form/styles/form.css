@@ -1,15 +1,21 @@
+html {
+    height: 100%;
+}
+
 body {
     background: linear-gradient(225deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%), linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%), #f39494;
-    width: 1440px;
-    height: 1024px;
+    max-width: 1440px;
+    height: 100%;
 }
 
 main {
     background: #fffefe;
     border-radius: 10px;
     border: none;
-    padding: 93px;
+    padding: 72px 95px 91px 93px;
     margin: 0 auto;
+    width: 582px;
+    text-align: center;
 }
 
 h1 {
@@ -19,7 +25,7 @@ h1 {
     font-size: 36px;
     line-height: 49.03px;
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 p {
@@ -45,8 +51,13 @@ p {
     color: #333333;
 }
 
+#family {
+    border-left: 1px solid #FFFFFF;
+    margin-left: 1px;
+}
+
 .nameSurname input {
-    border: 1px none;
+    border: none;
     background-color: #F5F5F5;
     border-radius: 5px;
     padding: 9px 11px;
@@ -62,7 +73,7 @@ p {
 }
 
 .email input {
-    border: 1px none;
+    border: none;
     background-color: #F5F5F5;
     border-radius: 5px;
     padding: 9px 11px;
@@ -100,17 +111,14 @@ input {
     background-color: #F5F5F5;
 }
 
-.arrow {
-    position: relative;
-}
-
 .arrow img {
     position: absolute;
     top: 10px;
-    left: 340px;
+    right: 10px;
 }
 
 .arrow button {
+    position: relative;
     background-color: #089FE0;
     color: #FFFFFF;
     font-size: 18px;
@@ -119,7 +127,7 @@ input {
     font-family: 'Open Sans', sans-serif;
     border: none;
     border-radius: 5px;
-    text-align: center;
+    text-align: justify;
     padding: 9px 102px;
     margin-bottom: 22px;
     height: 44px;
