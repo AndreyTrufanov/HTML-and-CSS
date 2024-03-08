@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -5,7 +9,7 @@ html {
 body {
     background: linear-gradient(225deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%), linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%), #f39494;
     max-width: 1440px;
-    height: 100%;
+    margin: 0 auto;
 }
 
 main {
@@ -14,7 +18,8 @@ main {
     border: none;
     padding: 72px 95px 91px 93px;
     margin: 0 auto;
-    width: 582px;
+    max-width: 582px;
+    max-height: 573px;
     text-align: center;
 }
 
@@ -24,7 +29,6 @@ h1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 49.03px;
-    text-align: center;
     margin: 0;
 }
 
@@ -40,11 +44,8 @@ p {
 
 #company {
     border: 1px solid #F5F5F5;
-    border-radius: 5px;
     background-color: #fff;
-    padding: 9px 11px;
-    margin-bottom: 21px;
-    height: 44px;
+    margin: 0 0 21px 0;
 }
 
 #company::placeholder {
@@ -54,15 +55,16 @@ p {
 #family {
     border-left: 1px solid #FFFFFF;
     margin-left: 1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .nameSurname input {
-    border: none;
-    background-color: #F5F5F5;
-    border-radius: 5px;
-    padding: 9px 11px;
-    margin-bottom: 22px;
-    height: 44px;
+    width: calc(50% - 1px);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .nameSurname ::placeholder {
@@ -70,15 +72,6 @@ p {
     font-style: italic;
     font-weight: 400;
     font-size: 16px;
-}
-
-.email input {
-    border: none;
-    background-color: #F5F5F5;
-    border-radius: 5px;
-    padding: 9px 11px;
-    margin-bottom: 22px;
-    height: 44px;
 }
 
 .email ::placeholder {
@@ -94,7 +87,12 @@ p {
     line-height: 19.07px;
 }
 
-.checkbox span {
+.checkbox input {
+    width: 15px;
+    height: 16px;
+}
+
+.checkbox label {
     color: #666666;
 }
 
@@ -103,12 +101,33 @@ p {
     text-decoration: none;
 }
 
+.customCheckbox {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    background: rgb(245, 245, 245);
+    margin-right: 4px;
+    vertical-align: sub;
+}
+
 #enter {
     color: #089FE0;
 }
 
 input {
+    line-height: 24px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 9px 36px 9px 11px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
     background-color: #F5F5F5;
+    margin: 0 0 22px 0;
 }
 
 .arrow img {
@@ -127,8 +146,9 @@ input {
     font-family: 'Open Sans', sans-serif;
     border: none;
     border-radius: 5px;
-    text-align: justify;
+    text-align: center;
     padding: 9px 102px;
     margin-bottom: 22px;
     height: 44px;
+    width: 100%;
 }

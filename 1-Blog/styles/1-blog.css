@@ -4,12 +4,13 @@
 
 body {
     background: linear-gradient(#374151, #111827);
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 1440px;
 }
 
 header {
-    margin-bottom: 69px;
+    margin: 71px 0 69px;
 }
 
 h1 {
@@ -43,8 +44,10 @@ nav ul {
 }
 
 #girl {
+    position: absolute;
     max-width: max-content;
     max-height: max-content;
+    left: 585px;
 }
 
 #imac {
@@ -112,6 +115,7 @@ section p {
 }
 
 .author__description {
+    position: relative;
     margin-bottom: 28px;
 }
 
