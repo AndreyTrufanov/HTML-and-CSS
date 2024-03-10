@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2-Form</title>
+    <link rel="stylesheet" href="./styles/form.css">
 </head>
 
 <body>
@@ -13,24 +14,29 @@
             <div>
                 <h1>Регистрация</h1>
                 <p>Уже есть аккаунт?
-                    <a href="#">Войти</a>
+                    <a href="#" id="enter">Войти</a>
                 </p>
             </div>
             <div>
-                <label for="company">Моя компания</label>
-                <input type="text" name="company" id="company">
+                <input type="text" name="company" placeholder="Моя компания" id="company">
             </div>
-            <div>
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Фамилия">
+            <div class="nameSurname">
+                <input type="text" placeholder="Имя"><input type="text" placeholder="Фамилия" id="family">
             </div>
-            <div>
+            <div class="email">
                 <input type="email" placeholder="Email">
             </div>
-            <button>Зарегистрироваться</button>
-            <div>
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <label for="checkbox">Я прочитал и принимаю</label>
+            <div class="arrow">
+                <button>
+                    <img src="./images/Arrow 1.svg" alt="изображение стрелки вправо">
+                    Зарегистрироваться
+                </button>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="checkbox" required>
+                    Я прочитал и принимаю
+                </label>
                 <a href="#">Условия использования</a>
             </div>
         </form>

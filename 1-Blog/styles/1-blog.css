@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#374151, #111827);
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+}
+
+header {
+    margin: 71px 0 69px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer {
+    color: #A0A3A9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 77px;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#girl {
+    position: absolute;
+    max-width: max-content;
+    max-height: max-content;
+    left: 585px;
+}
+
+#imac {
+    border-radius: 5px;
+    width: 896px;
+    height: 594px;
+    margin-bottom: 69px;
+}
+
+.search ::placeholder {
+    color: #FFFFFF;
+}
+
+.search input {
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #283241;
+    border-radius: 100px;
+    height: 40px;
+    padding: 9px 11px 12px 49px;
+    border: 1px solid #283241;
+}
+
+.search {
+    position: relative;
+}
+
+.search img {
+    position: absolute;
+    top: 14px;
+    left: 18px;
+}
+
+#logo {
+    color: #FFFFFF;
+    background-color: #4B5563;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.63px;
+    text-decoration: none;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
+}
+
+.link {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-decoration: none;
+}
+
+.section1 {
+    text-align: center;
+}
+
+section p {
+    color: #ADB1B7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    max-width: 708px;
+    margin: 0 auto;
+}
+
+.author__description {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.author__name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #fff;
+}
+
+.author__position {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #ACAFB6;
+}
+
+.heroText {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 62px;
+}
+
+.text {
+    margin-bottom: 103px;
+}
+
+.sectionText {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.sectionText>a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
