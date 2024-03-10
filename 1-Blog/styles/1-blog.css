@@ -44,10 +44,8 @@ nav ul {
 }
 
 #girl {
-    position: absolute;
-    max-width: max-content;
-    max-height: max-content;
-    left: 585px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 #imac {
@@ -115,7 +113,6 @@ section p {
 }
 
 .author__description {
-    position: relative;
     margin-bottom: 28px;
 }
 
