@@ -42,6 +42,19 @@ p {
     margin-top: 0;
 }
 
+input {
+    line-height: 24px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 9px 36px 9px 11px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    margin: 0 0 22px 0;
+}
+
 #company {
     border: 1px solid #F5F5F5;
     background-color: #fff;
@@ -115,19 +128,6 @@ p {
 
 #enter {
     color: #089FE0;
-}
-
-input {
-    line-height: 24px;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 9px 36px 9px 11px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    background-color: #F5F5F5;
-    margin: 0 0 22px 0;
 }
 
 .arrow img {
