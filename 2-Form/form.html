@@ -4,40 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2-Form</title>
+    <title>Форма регистрация</title>
     <link rel="stylesheet" href="./styles/form.css">
 </head>
 
 <body>
     <main>
-        <form action="#">
-            <div>
+        <form action="#" class="container">
+            <div class="head">
                 <h1>Регистрация</h1>
                 <p>Уже есть аккаунт?
                     <a href="#" id="enter">Войти</a>
                 </p>
             </div>
-            <div>
-                <input type="text" name="company" placeholder="Моя компания" id="company">
-            </div>
-            <div class="nameSurname">
-                <input type="text" placeholder="Имя"><input type="text" placeholder="Фамилия" id="family">
-            </div>
-            <div class="email">
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="arrow">
-                <button>
-                    <img src="./images/Arrow 1.svg" alt="изображение стрелки вправо">
-                    Зарегистрироваться
-                </button>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="checkbox" required>
-                    Я прочитал и принимаю
-                </label>
-                <a href="#">Условия использования</a>
+            <div class="item">
+                <div>
+                    <input type="text" name="company" placeholder="Моя компания" id="company">
+                </div>
+                <div class="nameSurname">
+                    <input type="text" placeholder="Имя"><input type="text" placeholder="Фамилия" id="family">
+                </div>
+                <div class="email">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="arrow">
+                    <button>
+                        <img src="./images/Arrow 1.svg" alt="изображение стрелки вправо">
+                        Зарегистрироваться
+                    </button>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="checkbox" required>
+                        Я прочитал и принимаю
+                    </label>
+                    <a href="#">Условия использования</a>
+                </div>
             </div>
         </form>
     </main>
