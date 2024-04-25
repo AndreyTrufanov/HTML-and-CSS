@@ -6,13 +6,14 @@ body {
     background: linear-gradient(#374151, #111827);
     margin: 0 auto;
     padding: 0;
-    max-width: 1440px;
+    max-width: 1080px;
 }
 
 header {
     display: flex;
     align-items: center;
-    margin: 71px 0 69px;
+    justify-content: space-between;
+    margin: 71px 69px;
 }
 
 h1 {
@@ -47,6 +48,11 @@ nav ul {
     list-style: none;
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+}
+
 #girl {
     max-width: 50px;
     max-height: 50px;
@@ -60,12 +66,13 @@ nav ul {
 }
 
 .search ::placeholder {
-    color: rgb(255, 255, 255);
+    color: #ADB1B7;
 }
 
 .search input {
     font-weight: 400;
     font-size: 16px;
+    color: #ADB1B7;
     background-color: #283241;
     border-radius: 100px;
     height: 40px;
@@ -112,14 +119,13 @@ section p {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
-    max-width: 708px;
-    margin: 0 auto;
 }
 
 .author__description {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
     margin-bottom: 28px;
 }
 
@@ -129,6 +135,13 @@ section p {
     font-size: 16px;
     line-height: 175%;
     color: #fff;
+    margin-bottom: 0;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .author__position {
@@ -137,6 +150,7 @@ section p {
     font-size: 14px;
     line-height: 200%;
     color: #ACAFB6;
+    margin-top: 0;
 }
 
 .heroText {
@@ -148,6 +162,8 @@ section p {
 }
 
 .text {
+    max-width: 708px;
+    margin: 0 auto;
     margin-bottom: 103px;
 }
 

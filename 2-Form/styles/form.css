@@ -9,6 +9,7 @@ html {
 body {
     background: linear-gradient(225deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%), linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%), #f39494;
     max-width: 1440px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +64,16 @@ input {
 }
 
 #company::placeholder {
-    color: #333333;
+    color: #999999;
+    font-style: italic;
+}
+
+#company::placeholder:focus {
+    color: rgb(51, 51, 51);
+    font-family: 'Open Sans' sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
 }
 
 #family {
@@ -114,6 +124,7 @@ input {
 }
 
 .checkbox {
+    margin-right: auto;
     font-size: 14px;
     font-weight: 400;
     line-height: 19.07px;
@@ -133,15 +144,48 @@ input {
     text-decoration: none;
 }
 
-.customCheckbox {
+.fake-checkbox {
     position: relative;
     display: inline-block;
+    margin-right: 4px;
     width: 15px;
     height: 16px;
     border: 1px solid rgb(238, 238, 238);
     border-radius: 5px;
     background: rgb(245, 245, 245);
-    vertical-align: sub;
+    vertical-align: text-top;
+}
+
+.fake-checkbox::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("/images/fake-checkbox.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in;
+}
+
+.real-checkbox:checked+.fake-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.real-checkbox:focus+.fake-checkbox {
+    background: rgb(231, 230, 230);
 }
 
 #enter {
