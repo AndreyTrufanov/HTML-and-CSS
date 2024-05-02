@@ -8,7 +8,7 @@ html {
 
 body {
     background: linear-gradient(225deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%), linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%), #f39494;
-    max-width: 1440px;
+    margin: 0;
     height: 100%;
     display: flex;
     align-items: center;
@@ -46,7 +46,6 @@ p {
 
 input {
     line-height: 24px;
-    font-style: italic;
     font-weight: 400;
     font-size: 16px;
     padding: 9px 36px 9px 11px;
@@ -57,23 +56,27 @@ input {
 }
 
 #company {
-    border: 1px solid #F5F5F5;
-    background-color: #fff;
     width: 394px;
     height: 44px;
+}
+
+.item :focus {
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    outline: none;
 }
 
 #company::placeholder {
     color: #999999;
     font-style: italic;
-}
-
-#company::placeholder:focus {
-    color: rgb(51, 51, 51);
-    font-family: 'Open Sans' sans-serif;
+    font-weight: 400;
     font-size: 16px;
-    font-weight: 600;
-    line-height: 22px;
 }
 
 #family {
