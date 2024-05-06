@@ -6,16 +6,21 @@ body {
     background: linear-gradient(#374151, #111827);
     padding: 0;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 71px 0 69px;
+    padding: 71px 0 69px;
     max-width: 1080px;
     margin: 0 auto;
     margin-bottom: 81px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 main {
@@ -35,6 +40,7 @@ h1 {
 
 footer {
     color: #A0A3A9;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -44,6 +50,7 @@ footer {
 
 nav a {
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -78,6 +85,7 @@ nav ul {
 }
 
 .search input {
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #ADB1B7;
@@ -105,6 +113,7 @@ nav ul {
 #logo {
     color: #FFFFFF;
     background-color: #4B5563;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 22.63px;
@@ -118,6 +127,7 @@ nav ul {
 
 .link {
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.09px;
@@ -130,6 +140,7 @@ nav ul {
 
 section p {
     color: #ADB1B7;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
@@ -169,6 +180,7 @@ section p {
 
 .heroText {
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
@@ -183,6 +195,7 @@ section p {
 
 .sectionText {
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
