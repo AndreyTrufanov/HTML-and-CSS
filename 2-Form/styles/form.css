@@ -8,8 +8,11 @@ html {
 
 body {
     background: linear-gradient(225deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%), linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%), #f39494;
-    max-width: 1440px;
-    margin: 0 auto;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
@@ -17,10 +20,10 @@ main {
     border-radius: 10px;
     border: none;
     padding: 72px 95px 91px 93px;
-    margin: 0 auto;
     max-width: 582px;
     max-height: 573px;
     text-align: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 h1 {
@@ -29,7 +32,7 @@ h1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 49.03px;
-    margin: 0;
+    margin-bottom: 0;
 }
 
 p {
@@ -38,27 +41,64 @@ p {
     font-weight: 400;
     line-height: 24.51px;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 47px;
     margin-top: 0;
 }
 
+input {
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 9px 36px 9px 11px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+
 #company {
-    border: 1px solid #F5F5F5;
-    background-color: #fff;
-    margin: 0 0 21px 0;
+    width: 394px;
+    height: 44px;
+}
+
+.item :focus {
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    outline: none;
 }
 
 #company::placeholder {
-    color: #333333;
+    color: #999999;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 #family {
     border-left: 1px solid #FFFFFF;
-    margin-left: 1px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
 }
 
 .nameSurname input {
@@ -74,6 +114,11 @@ p {
     font-size: 16px;
 }
 
+.email {
+    width: 394px;
+    height: 44px;
+}
+
 .email ::placeholder {
     color: #999999;
     font-style: italic;
@@ -82,6 +127,7 @@ p {
 }
 
 .checkbox {
+    margin-right: auto;
     font-size: 14px;
     font-weight: 400;
     line-height: 19.07px;
@@ -101,33 +147,52 @@ p {
     text-decoration: none;
 }
 
-.customCheckbox {
+.fake-checkbox {
     position: relative;
     display: inline-block;
+    margin-right: 4px;
     width: 15px;
     height: 16px;
     border: 1px solid rgb(238, 238, 238);
     border-radius: 5px;
     background: rgb(245, 245, 245);
-    margin-right: 4px;
-    vertical-align: sub;
+    vertical-align: text-top;
+}
+
+.fake-checkbox::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("/images/fake-checkbox.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in;
+}
+
+.real-checkbox:checked+.fake-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.real-checkbox:focus+.fake-checkbox {
+    background: rgb(231, 230, 230);
 }
 
 #enter {
     color: #089FE0;
-}
-
-input {
-    line-height: 24px;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 9px 36px 9px 11px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    background-color: #F5F5F5;
-    margin: 0 0 22px 0;
 }
 
 .arrow img {
@@ -148,7 +213,6 @@ input {
     border-radius: 5px;
     text-align: justify;
     padding: 9px 102px;
-    margin-bottom: 22px;
+    width: 394px;
     height: 44px;
-    width: 100%;
 }

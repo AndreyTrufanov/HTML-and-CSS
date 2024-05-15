@@ -4,13 +4,29 @@
 
 body {
     background: linear-gradient(#374151, #111827);
-    margin: 0 auto;
     padding: 0;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 header {
-    margin: 71px 0 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 71px 0 69px;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 81px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+
 }
 
 h1 {
@@ -24,6 +40,7 @@ h1 {
 
 footer {
     color: #A0A3A9;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -33,6 +50,7 @@ footer {
 
 nav a {
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -40,14 +58,19 @@ nav a {
 }
 
 nav ul {
+    display: flex;
+    gap: 52px;
     list-style: none;
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+}
+
 #girl {
-    position: absolute;
-    max-width: max-content;
-    max-height: max-content;
-    left: 585px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 #imac {
@@ -58,12 +81,14 @@ nav ul {
 }
 
 .search ::placeholder {
-    color: #FFFFFF;
+    color: #ADB1B7;
 }
 
 .search input {
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    color: #ADB1B7;
     background-color: #283241;
     border-radius: 100px;
     height: 40px;
@@ -75,6 +100,10 @@ nav ul {
     position: relative;
 }
 
+.search :focus {
+    outline: none;
+}
+
 .search img {
     position: absolute;
     top: 14px;
@@ -84,6 +113,7 @@ nav ul {
 #logo {
     color: #FFFFFF;
     background-color: #4B5563;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 22.63px;
@@ -91,10 +121,13 @@ nav ul {
     padding: 6px 12px;
     border: none;
     border-radius: 3px;
+    margin-right: 11px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
 .link {
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.09px;
@@ -107,15 +140,17 @@ nav ul {
 
 section p {
     color: #ADB1B7;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
-    max-width: 708px;
-    margin: 0 auto;
 }
 
 .author__description {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
     margin-bottom: 28px;
 }
 
@@ -125,6 +160,13 @@ section p {
     font-size: 16px;
     line-height: 175%;
     color: #fff;
+    margin-bottom: 0;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .author__position {
@@ -133,10 +175,12 @@ section p {
     font-size: 14px;
     line-height: 200%;
     color: #ACAFB6;
+    margin-top: 0;
 }
 
 .heroText {
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
@@ -144,11 +188,14 @@ section p {
 }
 
 .text {
+    max-width: 708px;
+    margin: 0 auto;
     margin-bottom: 103px;
 }
 
 .sectionText {
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
