@@ -1,0 +1,31 @@
+:root {
+    --color-main: rgba(53, 126, 254, 1);
+    --color-text: rgba(78, 93, 124, 0.5);
+    --color-text-secondary: rgba(78, 93, 124, 1);
+    --color-tariffs: rgb(0, 0, 0);
+    --color-benefit: rgba(26, 188, 156, 1);
+    --color-benefit-secondary: rgba(255, 199, 54, 1);
+    --color-botton-secondary: rgba(255, 255, 255, 1);
+    --color-text-single: rgba(255, 255, 255, 0.6);
+    --color-line-primary: rgba(78, 93, 124, 0.08);
+    --color-line-secondary: rgba(255, 255, 255, 0.16);
+
+
+    --border-8: 8px;
+    --border-47: 47px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
