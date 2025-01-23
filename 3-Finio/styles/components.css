@@ -1,0 +1,145 @@
+.Tariff__card {
+    border-radius: var(--border-8);
+    background-color: #fafafa;
+    box-shadow: 0px 0px 32px 0px rgba(78, 93, 124, 0.16);
+    width: 369px;
+    height: 507px;
+    padding: 93px 40px 48px 40px;
+
+}
+
+
+.headling {
+    display: grid;
+    gap: 24px;
+    text-align: center;
+}
+
+.headling__top {
+    color: var(--color-tariffs);
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.headling__buttom {
+    margin: 0;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.Tariff__card-titile {
+    color: var(--color-tariffs);
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.Tariff__card-subtitle {
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.Tariff__card-content {
+    color: var(--color-text-secondary);
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 120%;
+    border-bottom: 1px solid var(--color-line-primary);
+}
+
+.Tariff__card-content_border_none {
+    border-bottom: none;
+}
+
+.Tariff__card-button {
+    color: var(--color-botton-secondary);
+    background-color: var(--color-main);
+    border-radius: var(--border-47);
+    border-radius: 47px;
+    padding: 12px 63px;
+    width: 289px;
+    height: 48px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 140%;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(3, 369px);
+    gap: 25px;
+    justify-content: center;
+}
+
+.tariffs__wrapper {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Tariff__card_view_secondary button {
+    background-color: var(--color-botton-secondary);
+    color: var(--color-main);
+}
+
+.Tariff__card_view_secondary {
+    background: var(--color-main);
+}
+
+.Tariff__card-titile_view {
+    color: var(--color-botton-secondary);
+}
+
+.Tariff__card-subtitle_view {
+    color: var(--color-text-single);
+}
+
+.Tariff__card-content_view {
+    color: var(--color-botton-secondary);
+    border-bottom: 1px solid var(--color-line-secondary);
+}
+
+.Tariff__card-benefit {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 140%;
+    color: var(--color-botton-secondary);
+    background: var(--color-benefit);
+    border-radius: var(--border-8);
+    padding: 4px 16px 4px 16px;
+}
+
+.Tariff__card-content_benefit {
+    border-radius: var(--border-8);
+    background-color: var(--color-benefit-secondary);
+    font-weight: 700;
+    padding: 8px 16px 8px 16px;
+    color: var(--color-botton-secondary);
+}
+
+.Tariff__card_grid {
+    display: grid;
+    gap: 16px;
+}
+
+.Tariff__card_grid h3 {
+    margin: 0;
+}
+
+.Tariff__card_grid p {
+    margin: 0;
+}
